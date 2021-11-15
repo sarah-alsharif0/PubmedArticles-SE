@@ -225,3 +225,12 @@ h2{
 .title-link{
   text-decoration: none;
 }
+#submitbtn{
+  border:none;
+  padding:10px;
+  background-color:rgb(99, 58, 58);
+  color:white;
+  border-radius:5px;
+  font-size: 18px;
+  cursor: pointer;
+}
