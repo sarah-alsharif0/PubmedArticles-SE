@@ -1,53 +1,62 @@
-<!DOCTYPE html
-  PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2019//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_190101.dtd">
+<!DOCTYPE html PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2019//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_190101.dtd">
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pubmed Articles</title>
+    <link rel="stylesheet" href="/assets/css/pubmed.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pubmed Articles</title>
-  <link rel="stylesheet" href="/assets/css/pubmed.css" type="text/css" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-</head>
+  <body>
+    <div class="header-container">
+      <header class="header">
+        <a href="/xquery/index.xqy" class="link-title">
+          <h1 class="title">Pubmed Articles</h1>
+        </a>
+      </header>
+      <div class="form-container">
+        <span class="sub-title">How can we help you?</span>
+        <form
+          name="form1"
+          method="get"
+          action="/xquery/index.xqy"
+          id="form1"
+          class="form1"
+        >
+          <div id="searchContainer" class="search-container">
+            <input class="search-box" type="text" name="q" id="q" size="50" />
+            <button type="button" id="resetButton" class="reset-button">
+              x
+            </button>
+            <input
+              type="submit"
+              id="submitbtn"
+              name="submitbtn"
+              value="search"
+              class="submit-button"
+            />
+          </div>
 
-<body>
-  <div class="header-container">
-    <header class="header">
-      <a href="/xquery/index.xqy"></a>
-      <h1 class="title">Pubmed Articles</h1>
-    </header>
-    <div class="form-container">
-      <span class="sub-title">How can we help you?</span>
-      <form name="form1" method="get" action="/xquery/index.xqy" id="form1" class="form1">
-
-        <div id="searchContainer" class="search-container">
-
-          <input type="text" name="q" id="q" size="50" class="search-box" />
-          <button type="button" id="resetButton" onclick="" class="reset-button">
-            x
-          </button>
-          <input type="submit" id="submitButton" name="submitButton" value="search" class="submit-button" />
-        </div>
-        <div id="advancedContainer" class="advanced-container">
-          <a href="./advanced.xqy">Advanced Search</a>
+          <div id="advancedContainer" class="advanced-container">
+            <a href="./advanced.xqy" class="link-advanced">Advanced Search</a>
+          </div>
+          <div class="content-container">
+            <div id="detailsContainer" class="details-container">
+              
+            </div>
+            <div id="facetsContainer" class="facets-container">
+              
+            </div>
+          </div>
+        </form>
       </div>
-      
-      <div class="content-container">
-        <div id="detailsContainer" class="details-container">
-    
-        </div>
-        <div id="facetsContainer" class="facets-container">
-         
-        </div>
-      </div>
-      </form>
     </div>
-  </div>
-
-    
-</body>
-
+  </body>
 </html>
-
