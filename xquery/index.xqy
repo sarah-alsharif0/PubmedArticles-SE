@@ -455,7 +455,7 @@ xdmp:set-response-content-type("text/html; charset=utf-8"),
         </div>
 
         <div id="advancedContainer" class="advanced-container">
-        <a href="./advanced.xqy" class="text">Advanced Search</a>
+        <a href="./advanced.xqy" class="link-advanced">Advanced Search</a>
     </div>
   <div class="content-container">
     <div id="detailsContainer" class="details-container">
